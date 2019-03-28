@@ -31,10 +31,10 @@ names(sub_wave) <- paste0('B',4:7)
 
 d <- as.data.frame(t(sub_wave))
 
+l <- c(665,703.9,740.2,782.5)
+
 plot(l,d[,1])
 lines(l~d[,1],type="o", lwd=2)
-
-l <- c(665,703.9,740.2,782.5)
 
 for (i in 1:1000) {
   points(l,d[,i])
